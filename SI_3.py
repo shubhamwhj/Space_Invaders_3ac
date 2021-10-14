@@ -1,16 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 21 11:04:52 2021
-
-@author: Shourabh Verma
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 import pygame, sys
 
 pygame.init()
@@ -18,7 +5,6 @@ clock=pygame.time.Clock()
 
 screen = pygame.display.set_mode((400,600))
 
-#creating objects of game
 player=pygame.Rect(200,500,30,30)
 playerSpeed=20
 enemy=pygame.Rect(70,50,40,40)
@@ -36,6 +22,7 @@ while True:
                 player.x -=playerSpeed
             if event.key ==pygame.K_RIGHT:
                 player.x +=playerSpeed
+            #add code here, to print "Bullet Fired" on pressing the space key.
          
     enemy.x= enemy.x + enemyspeed
     
